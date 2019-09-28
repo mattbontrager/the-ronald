@@ -52,4 +52,5 @@ body > main {
 	text-align: center;
 	line-height: 1.5;
 	margin: 0 auto;
+	max-width: 50vw;
 }
