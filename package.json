@@ -1,0 +1,86 @@
+{
+	"name": "the-ronald",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "prettier --write src/**/*.js && eslint --fix src",
+		"build:bundle": "NODE_ENV=production webpack --mode production",
+		"build": "npm run test && npm run build:bundle",
+		"start": "webpack-dev-server"
+	},
+	"keywords": [],
+	"engines": {
+		"node": "12.0.0"
+	},
+	"author": "Matt Bontrager <matt.bontrager@icloud.com>",
+	"license": "MIT",
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"node": true,
+			"es6": true
+		},
+		"parserOptions": {
+			"ecmaVersion": 8,
+			"sourceType": "module"
+		},
+		"rules": {
+			"indent": [
+				"error",
+				"tab",
+				{
+					"SwitchCase": 1
+				}
+			],
+			"linebreak-style": [
+				"error",
+				"unix"
+			],
+			"quotes": [
+				"error",
+				"single",
+				{
+					"avoidEscape": true,
+					"allowTemplateLiterals": true
+				}
+			],
+			"semi": [
+				"error",
+				"always"
+			],
+			"one-var": [
+				"error",
+				{
+					"var": "always",
+					"let": "never",
+					"const": "never",
+					"separateRequires": true
+				}
+			],
+			"no-undef": 2,
+			"no-unused-vars": 2,
+			"arrow-parens": [
+				"error",
+				"as-needed"
+			],
+			"no-extra-parens": 2
+		}
+	},
+	"devDependencies": {
+		"clean-webpack-plugin": "^3.0.0",
+		"css-loader": "^3.2.0",
+		"eslint": "^6.4.0",
+		"file-loader": "^4.2.0",
+		"html-webpack-plugin": "^3.2.0",
+		"image-webpack-loader": "^6.0.0",
+		"mini-css-extract-plugin": "^0.8.0",
+		"prettier": "^1.18.2",
+		"prettierrc": "0.0.0-5",
+		"style-loader": "^1.0.0",
+		"webpack": "^4.41.0",
+		"webpack-cli": "^3.3.9",
+		"webpack-dev-server": "^3.8.1",
+		"webpack-md5-hash": "0.0.6"
+	}
+}

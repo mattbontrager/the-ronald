@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chango&display=swap');
+
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+body > header {
+	flex: 1 0 15vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.title {
+	font: normal 80px 'Chango', cursive;
+}
+
+body > main {
+	flex: 1 0 79vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	align-content: center;
+	box-sizing: border-box;
+	padding-bottom: 5vh;
+}
+
+.the-ronald {
+	order: 1;
+	flex: 3;
+	background: url('../images/the-ronald.png') top center/contain no-repeat;
+}
+
+.quote {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	flex: 1;
+	order: 2;
+	font: normal 40px 'Mansalva', cursive;
+	color: #4d4d4d;
+	text-align: center;
+	line-height: 1.5;
+	margin: 0 auto;
+}
